@@ -23,4 +23,4 @@ for ana in soup.findAll('a'):
     print ana.text.encode('utf-8')
 
 
-print celeb_page
+#print celeb_page
