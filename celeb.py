@@ -47,7 +47,4 @@ print "*******Experiment-print only names of celebs*******"
 for ana in imdb_born_today_url_soup.findAll('a'):
   if ana.parent.name == 'td':
     print ana.text.encode('utf-8')
-
-
-
 #print celeb_page
