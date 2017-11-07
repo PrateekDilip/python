@@ -1,19 +1,3 @@
-#+13853991888 Twilio number
-#Type, Date, amount
-#RD 2-Feb-2017 5000 SBH
-#RD 21-Feb-2017	8000 SBH
-#RD 6-Feb-2017 2000 SBH
-
-#RD 22-Nov-2017 4000 Citibank
-#RD 9-Feb-2016 10000 CitiBank
-#RD 12-Feb-2016	10000 CitiBank
-#RD 15-Feb-2016 4000  CitiBank
-
-#EQ 6-Jul-2017 4000 Citibank	
-#EQ 14-Nov-2017 4000 Citibank
-#EQ 20-Jul-2017 4000 Citibank
-#EQ 27-Sep-2017 6000 Citibank
-
 import smtplib
 import os, sys
 import datetime
@@ -23,11 +7,11 @@ from smsapi import SmsApi
 server = smtplib.SMTP("smtp.gmail.com", 587)
 server.starttls()
 
-server.login( 'halwe.prateek@gmail.com', 'bakethecake!88' )
-server.sendmail( 'Prateek', 'prateekd@juniper.net', 'Investment' )
+server.login( '***@abc.com', '****password***' )
+server.sendmail( 'Prateek', '*****@abc.com', 'Investment' )
 
 username = "prateek"
-password = "prateek123"
+password = "***"
 
 sms = SmsApi(username, password)
 
@@ -35,12 +19,12 @@ sms = SmsApi(username, password)
 from twilio.rest import Client
 
 # Your Account SID from twilio.com/console
-account_sid = "AC4d674fa43cae45bd31e49b25dec270c2"
+account_sid = "***"
 # Your Auth Token from twilio.com/console
-auth_token  = "f90fbf023e7857b01b230f3f0d38bff9"
+auth_token  = "***"
 
 username = "prateek"
-password = "prateek123"
+password = "***"
 
 sms = SmsApi(username, password)
 
@@ -67,8 +51,8 @@ for i in word:
 		print ("Write code to send sms now")
         	client = Client(account_sid, auth_token)
 		message = client.messages.create(
-	            to="+918105088557", 
-                    from_="+13853991888",
+	            to="+91**", 
+                    from_="+1**",
                     body="Hello from Python!")
 		print(message)
 
